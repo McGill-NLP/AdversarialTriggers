@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["adversarial_triggers"]
+
+[project]
+name = "adversarial_triggers"
+description = "Investigating adversarial triggers for LLMs"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+    "torch<=2.1.2",
+    "transformers<=4.38.1",
+    "accelerate",
+    "datasets",
+    "tensorboard",
+    "sentencepiece",
+    "protobuf",
+    "pandas",
+    "plotnine",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit", 
+    "pytest",
+]
