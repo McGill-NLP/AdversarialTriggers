@@ -1,13 +1,18 @@
 [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2404.16020)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Universal Adversarial Triggers Are Not Universal
 > Nicholas Meade, Arkil Patel, Siva Reddy
+
+Code for reproducing the results in the paper *[Universal Adversarial Triggers Are Not Universal](https://arxiv.org/abs/2404.16020)*.
+Our code can be used for optimizing adversarial triggers with GCG at *scale*.
 
 <br>
 <p align="center">
     <img src="assets/results.png" width="70%" />
 </p>
 
-Stay tuned: Additional usage examples will be added today (April 25, 2024)!
+To quickly see how triggers can be optimized over **multiple targets and multiple models** using GCG, refer to the `experiments/multiple.py` script.
+Stay tuned in the coming days (April 25) as we plan to add more detailed usage examples.
 
 ## Install
 ```bash
@@ -66,11 +71,25 @@ For additional options for each of these scripts, use the `--help` argument.
 To fine-tune triggers on a *single* target, use the `experiments/single.py` script.
 To fine-tune triggers on `multiple` targets use the `experiments/multiple.py` script.
 Use the `--help` argument for additional information on each of these scripts.
-I omit further information here as these APIs are more likely to change.
+For example, to optimize a trigger on Llama2-7B-Chat, you can use the following command:
+```bash
+python3 experiments/multiple.py \
+    --data_file_path "data/behaviour.jsonl" \
+    --model_name_or_path "meta-llama/Llama-2-7b-chat-hf" \
+    --split 0 \
+    --num_optimization_steps 500 \
+    --num_triggers 512 \
+    --k 256 \
+    --batch_size 256 \
+    --num_trigger_tokens 20 \
+    --num_examples 25 \
+    --logging_steps 1 \
+    --seed 0
+```
 
 To see example usages, refer to the `batch_jobs/single.sh` and `batch_jobs/multiple.sh` scripts.
 
-## Fine-tuning
+## Supervised Fine-Tuning
 To run supervised fine-tuning, use the `experiments/sft.py` script.
 To see example usage, refer to the `batch_jobs/sft.sh` script.
 
