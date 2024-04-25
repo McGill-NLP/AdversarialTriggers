@@ -11,7 +11,7 @@ Stay tuned: Additional usage examples will be added today (April 25, 2024)!
 
 ## Install
 ```bash
-git clone git@github.com:ncmeade/AdversarialTriggers.git
+git clone git@github.com:McGill-NLP/AdversarialTriggers.git
 cd AdversarialTriggers
 python3 -m pip install -e .
 ```
@@ -82,4 +82,20 @@ The `Makefile` provides several convenience commands for generating assets for t
 To run tests, use the following command:
 ```bash
 tox run
+```
+## Citation
+If you use this code in your research, please cite our paper:
+```
+@misc{meade_universal_2024,
+    title = {Universal {Adversarial} {Triggers} {Are} {Not} {Universal}},
+    url = {http://arxiv.org/abs/2404.16020},
+    doi = {10.48550/arXiv.2404.16020},
+    urldate = {2024-04-25},
+    publisher = {arXiv},
+    author = {Meade, Nicholas and Patel, Arkil and Reddy, Siva},
+    month = apr,
+    year = {2024},
+    note = {arXiv:2404.16020 null},
+    keywords = {Computer Science - Computation and Language},
+}
 ```
