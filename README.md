@@ -76,6 +76,7 @@ For example, to optimize a trigger on Llama2-7B-Chat, you can use the following 
 python3 experiments/multiple.py \
     --data_file_path "data/behaviour.jsonl" \
     --model_name_or_path "meta-llama/Llama-2-7b-chat-hf" \
+    --generation_config_file_path "config/greedy.json" \
     --split 0 \
     --num_optimization_steps 500 \
     --num_triggers 512 \

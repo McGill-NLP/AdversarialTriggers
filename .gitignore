@@ -5,7 +5,6 @@ results/
 plot/
 table/
 tensorboard/
-config/
 assets/
 .DS_Store
 
