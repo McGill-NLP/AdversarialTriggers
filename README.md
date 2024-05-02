@@ -115,7 +115,5 @@ If you use this code in your research, please cite our paper:
     author = {Meade, Nicholas and Patel, Arkil and Reddy, Siva},
     month = apr,
     year = {2024},
-    note = {arXiv:2404.16020 null},
-    keywords = {Computer Science - Computation and Language},
 }
 ```
