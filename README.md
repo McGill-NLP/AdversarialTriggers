@@ -1,7 +1,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2404.16020)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Investigating Adversarial Trigger Transfer in Large Language Models
-> Nicholas Meade, Arkil Patel, Siva Reddy
+> [Nicholas Meade](https://ncmeade.github.io), [Arkil Patel](https://arkilpatel.github.io), [Siva Reddy](https://sivareddy.in)
 
 Code for reproducing the results in the paper *[Investigating Adversarial Trigger Transfer in Large Language Models](https://arxiv.org/abs/2404.16020)* published at TACL 2025.
 Our code can be used for optimizing adversarial triggers with GCG at *scale*.
@@ -12,7 +12,6 @@ Our code can be used for optimizing adversarial triggers with GCG at *scale*.
 </p>
 
 To quickly see how triggers can be optimized over **multiple targets and multiple models** using GCG, refer to the `experiments/multiple.py` script.
-Stay tuned in the coming days (April 25) as we plan to add more detailed usage examples.
 
 ## Install
 ```bash
