@@ -1,9 +1,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-1234.56789-b31b1b.svg)](https://arxiv.org/abs/2404.16020)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# Universal Adversarial Triggers Are Not Universal
+# Investigating Adversarial Trigger Transfer in Large Language Models
 > Nicholas Meade, Arkil Patel, Siva Reddy
 
-Code for reproducing the results in the paper *[Universal Adversarial Triggers Are Not Universal](https://arxiv.org/abs/2404.16020)*.
+Code for reproducing the results in the paper *[Investigating Adversarial Trigger Transfer in Large Language Models](https://arxiv.org/abs/2404.16020)* published at TACL 2025.
 Our code can be used for optimizing adversarial triggers with GCG at *scale*.
 
 <br>
@@ -106,14 +106,17 @@ tox run
 ## Citation
 If you use this code in your research, please cite our paper:
 ```
-@misc{meade_universal_2024,
-    title = {Universal {Adversarial} {Triggers} {Are} {Not} {Universal}},
-    url = {http://arxiv.org/abs/2404.16020},
-    doi = {10.48550/arXiv.2404.16020},
-    urldate = {2024-04-25},
-    publisher = {arXiv},
+@article{meade_trigger_2025,
     author = {Meade, Nicholas and Patel, Arkil and Reddy, Siva},
-    month = apr,
-    year = {2024},
+    title = {Investigating Adversarial Trigger Transfer in Large Language Models},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {13},
+    pages = {953-979},
+    year = {2025},
+    month = {08},
+    issn = {2307-387X},
+    doi = {10.1162/TACL.a.27},
+    url = {https://doi.org/10.1162/TACL.a.27},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/TACL.a.27/2546288/tacl.a.27.pdf},
 }
 ```
