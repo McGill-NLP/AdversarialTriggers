@@ -8,7 +8,7 @@ Our code can be used for optimizing adversarial triggers with GCG at *scale*.
 
 <br>
 <p align="center">
-    <img src="assets/preview.png" width="70%" />
+    <img src="assets/preview.png" width="60%" />
 </p>
 
 To quickly see how triggers can be optimized over **multiple targets and multiple models** using GCG, refer to the `experiments/multiple.py` script.
